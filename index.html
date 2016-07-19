@@ -7,7 +7,7 @@
 </head>
 <body>
 <div ng-app="MyApp" ng-controller="myCtrl" class="container">
-    <table ng-repeat="(key,value) in deal  | groupBy :'group'">
+    <table ng-repeat="(key,value) in deal  |  orderBy:'group':true | groupBy :'group'">
       <tr> <td>-------------------------</td></tr>
       <tr><td> {{key}} </td></tr>
       <tr><td>------------------------</td></tr>
